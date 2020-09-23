@@ -1,0 +1,22 @@
+.rocket-container{
+  width: 100%;
+}
+.rockets {
+  position: relative;
+  background: rgba(5, 18, 28, 0.8);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+.rocket-button {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+}
+
+@media only screen and (min-width: 799px){
+  .rockets{
+    width: 45%;
+  }
+}

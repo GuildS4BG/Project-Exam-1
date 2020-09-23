@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@471;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b1f0dc6c90.js" crossorigin="anonymous"></script>
+    <script src="scripts/script.js" charset="utf-8"></script>
+    <script src="scripts/next_launch.js" charset="utf-8"></script>
+    <title></title>
+  </head>
+  <body class="background bg-home">
+    <header>
+      <div class="container">
+        <div class="header-logo">
+          <a href="index.html"><img class="left" src="img/SpaceX-Logo-white.svg" alt=""></a>
+        </div>
+        <div class="navbar" id="navbarResponsive">
+          <a class="menu active" href="index.html">home</a>
+          <a class="menu" href="missions.html">missions</a>
+          <a class="menu" href="rockets.html">rockets</a>
+          <a class="menu" href="about.html">about</a>
+          <a href="javascript:void(0);" class="burger" onclick="burgerToggle()">
+            <i class="fas fa-bars" id="burgerIcon"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div>
+        <div class="quote col-s-12 col-m-6 col-5">
+          <p>I just<br>need some<br><span class="quote-space">space</span></p>
+        </div>
+        <div class="col-s-12 col-m-12 col-5">
+          <section class="countdown">
+            <a class="countdown-click" href="missions.html">
+              <div class="countdown-text">
+                <h3>Next Rocket will launch in</h3>
+              </div>
+              <ul id="countdown">
+                <li><span class="countdown-numbers" id="days">01</span>
+                  <p class="countdown-text">days</p>
+                </li>
+                <li><span class="countdown-numbers" id="hours">00</span>
+                  <p class="countdown-text">hours</p>
+                </li>
+                <li><span class="countdown-numbers" id="minutes">00</span>
+                  <p class="countdown-text">minutes</p>
+                </li>
+                <li><span class="countdown-numbers" id="seconds">00</span>
+                  <p class="countdown-text">seconds</p>
+                </li>
+              </ul>
+            </a>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <br>
+      <p class="copy">Copyright &copy; 2020. All rights reserved.</p>
+      <br>
+    </footer>
+  </body>
+</html>

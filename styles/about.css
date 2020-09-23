@@ -1,0 +1,13 @@
+.about-container{
+  margin: auto;
+  margin-top: 50px;
+  width: 50%;
+  background: rgba(5, 18, 28, 0.6);
+  border-radius: 5px;
+  padding: 40px;
+}
+.about-container p{
+  color: white;
+  position: relative;
+  text-align: center;
+}
