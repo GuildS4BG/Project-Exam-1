@@ -1,4 +1,6 @@
-
+.sub-head {
+  font-size: 24px;
+}
 .next-mission {
   display: block;
   margin: 10px auto;
@@ -10,6 +12,9 @@
 }
 .next-mission-info{
   padding: 10px;
+}
+.flex-wrap {
+  margin-bottom: 100px;
 }
 .future-missions {
   background: #0F3654;
