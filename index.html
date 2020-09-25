@@ -12,68 +12,71 @@
     <script src="scripts/next_launch.js" charset="utf-8"></script>
     <title>SpaceX</title>
   </head>
-  <body class="background bg-home">
-    <header>
-      <div class="container">
-        <div class="header-logo">
-          <a href="index.html" title="SpaceX"><img class="left" src="img/SpaceX-Logo-white.svg" alt="SpaceX Logo"></a>
+  <body>
+    <div class="background bg-home">
+      <header>
+        <div class="container">
+          <div class="header-logo">
+            <a href="index.html" title="SpaceX"><img class="left" src="img/SpaceX-Logo-white.svg" alt="SpaceX Logo"></a>
+          </div>
+          <div class="navbar" id="navbarResponsive">
+            <a class="menu active" href="index.html" title="Home">home</a>
+            <a class="menu" href="missions.html" title="Missions">missions</a>
+            <a class="menu" href="rockets.html" title="Rockets">rockets</a>
+            <a class="menu" href="contact.html" title="Contact">contact</a>
+            <a class="menu" href="about.html" title="About">about</a>
+            <a href="javascript:void(0);" class="burger" onclick="burgerToggle()">
+              <i class="fas fa-bars" id="burgerIcon"></i>
+            </a>
+          </div>
         </div>
-        <div class="navbar" id="navbarResponsive">
-          <a class="menu active" href="index.html" title="Home">home</a>
-          <a class="menu" href="missions.html" title="Missions">missions</a>
-          <a class="menu" href="rockets.html" title="Rockets">rockets</a>
-          <a class="menu" href="about.html" title="About">about</a>
-          <a href="javascript:void(0);" class="burger" onclick="burgerToggle()">
-            <i class="fas fa-bars" id="burgerIcon"></i>
-          </a>
+      </header>
+      <main class="container">
+        <div class="quote">
+          <h1 class="quote-needs">Do you need some <span class="quote-space">space?</span></h1>
         </div>
-      </div>
-    </header>
-    <main class="container">
-      <div class="quote">
-        <h1 class="quote-needs">Do you need some <span class="quote-space">space?</span></h1>
-      </div>
-      <div class="bg-container">
-        <div class="guide">
-          <p>This is your miniguide to our rockets and their depatures</p>
+        <div class="bg-container">
+          <div class="guide">
+            <p>This is your miniguide to our rockets and their depatures</p>
+          </div>
+          <div class="button">
+            <a href="" id="live-button"target="_blank" title="Watch live">Watch Live Now!</a>
+          </div>
+          <div class="countdown">
+            <a class="countdown-click" href="missions.html" title="Go to Missions">
+              <div class="countdown-text">
+                <h2>Next rocket will launch in</h2>
+              </div>
+              <ul id="countdown">
+                <li><span class="countdown-numbers" id="days">01</span>
+                  <p class="countdown-text">days</p>
+                </li>
+                <li><span class="countdown-numbers" id="hours">00</span>
+                  <p class="countdown-text">hours</p>
+                </li>
+                <li><span class="countdown-numbers" id="minutes">00</span>
+                  <p class="countdown-text">minutes</p>
+                </li>
+                <li><span class="countdown-numbers" id="seconds">00</span>
+                  <p class="countdown-text">seconds</p>
+                </li>
+              </ul>
+            </a>
+          </div>
         </div>
-        <div class="button">
-          <a href="rockets.html" title="See our rockets">Watch live now!</a>
+      </main>
+      <footer>
+        <div class="social-media">
+          <h3>Join us on our social media!</h3>
+          <a href="https://www.instagram.com/spacex/" target="_blank" title="Instagram"><img src="img/instagram.svg" alt="Instagram"></a>
+          <a href="https://www.youtube.com/spacex" target="_blank" title="YouTube"><img src="img/youtube.svg" alt="YouTube"></a>
+          <a href="https://twitter.com/spacex" target="_blank" title="Twitter"><img src="img/twitter.svg" alt="Twitter"></a>
+          <a href="https://www.flickr.com/photos/spacex" target="_blank" title="flick"><img src="img/flickr.svg" alt="flickr"></a>
+          <a href="https://www.linkedin.com/company/spacex" target="_blank" title="Linkedin"><img src="img/linkedin.svg" alt="Linkedin"></a>
         </div>
-        <div class="countdown">
-          <a class="countdown-click" href="missions.html" title="Go to Missions">
-            <div class="countdown-text">
-              <h2>Next rocket will launch in</h2>
-            </div>
-            <ul id="countdown">
-              <li><span class="countdown-numbers" id="days">01</span>
-                <p class="countdown-text">days</p>
-              </li>
-              <li><span class="countdown-numbers" id="hours">00</span>
-                <p class="countdown-text">hours</p>
-              </li>
-              <li><span class="countdown-numbers" id="minutes">00</span>
-                <p class="countdown-text">minutes</p>
-              </li>
-              <li><span class="countdown-numbers" id="seconds">00</span>
-                <p class="countdown-text">seconds</p>
-              </li>
-            </ul>
-          </a>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="social-media">
-        <h3>Join us on our social media!</h3>
-        <a href="https://www.instagram.com/spacex/" target="_blank" title="Instagram"><img src="img/instagram.svg" alt="Instagram"></a>
-        <a href="https://www.youtube.com/spacex" target="_blank" title="YouTube"><img src="img/youtube.svg" alt="YouTube"></a>
-        <a href="https://twitter.com/spacex" target="_blank" title="Twitter"><img src="img/twitter.svg" alt="Twitter"></a>
-        <a href="https://www.flickr.com/photos/spacex" target="_blank" title="flick"><img src="img/flickr.svg" alt="flickr"></a>
-        <a href="https://www.linkedin.com/company/spacex" target="_blank" title="Linkedin"><img src="img/linkedin.svg" alt="Linkedin"></a>
-      </div>
-      <br>
-      <p class="copy">Copyright &copy; 2020. All rights reserved.  <a class="credit" href="credit.html" title="Credit">Credit</a></p><br>
-    </footer>
+        <br>
+        <p class="copy">Copyright &copy; 2020. All rights reserved.  <a class="credit" href="credit.html" title="Credit">Credit</a></p><br>
+      </footer>
+    </div>
   </body>
 </html>

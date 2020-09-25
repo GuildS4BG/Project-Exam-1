@@ -11,38 +11,40 @@
     <script src="https://kit.fontawesome.com/b1f0dc6c90.js" crossorigin="anonymous"></script>
     <title>SpaceX | Missions</title>
   </head>
-  <body class="background bg-ship">
-    <header class="sticky">
-      <div class="container">
-        <div class="header-logo">
-          <a href="index.html" title="SpaceX"><img class="left" src="img/SpaceX-Logo-white.svg" alt="SpaceX Logo"></a>
+  <body>
+    <div class="background bg-ship">
+      <header class="sticky">
+        <div class="container">
+          <div class="header-logo">
+            <a href="index.html" title="SpaceX"><img class="left" src="img/SpaceX-Logo-white.svg" alt="SpaceX Logo"></a>
 
+          </div>
+          <div class="navbar" id="navbarResponsive">
+            <a class="menu" href="index.html" title="Home">home</a>
+            <a class="menu active" href="missions.html" title="Missions">missions</a>
+            <a class="menu" href="rockets.html" title="Rockets">rockets</a>
+            <a class="menu" href="contact.html" title="Contact">contact</a>
+            <a class="menu" href="about.html" title="About">about</a>
+            <a href="javascript:void(0);" class="burger" onclick="burgerToggle()">
+              <i class="fas fa-bars" id="burgerIcon"></i>
+            </a>
+          </div>
         </div>
-        <div class="navbar" id="navbarResponsive">
-          <a class="menu" href="index.html" title="Home">home</a>
-          <a class="menu active" href="missions.html" title="Missions">missions</a>
-          <a class="menu" href="rockets.html" title="Rockets">rockets</a>
-          <a class="menu" href="about.html" title="About">about</a>
-          <a href="javascript:void(0);" class="burger" onclick="burgerToggle()">
-            <i class="fas fa-bars" id="burgerIcon"></i>
-          </a>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <h1 class="h1">Our rockets are always on a mission...</h1>
-        <p class="sub-head left-pad">This is our next one</p>
-        <div class="next-mission col-s-11 col-m-9 col-6">
+      </header>
+      <main>
+        <div class="container">
+          <h1 class="h1">We always have rockets on missions...</h1>
+          <p class="sub-head left-pad">The next mission will be:</p>
+          <div class="next-mission col-s-11 col-m-9 col-6">
 
-        </div>
-        <h2 class="left-pad">Check out this timeline to see which missions comes next:</h2>
-        <div class="flex-wrap">
+          </div>
+          <h2 class="left-pad">Check out this timeline to see which missions comes next:</h2>
+          <div class="flex-wrap">
 
+          </div>
         </div>
-      </div>
-    </main>
-    <footer>
+      </main>
+      <footer>
       <div class="social-media">
         <h3>Join us on our social media!</h3>
         <a href="https://www.instagram.com/spacex/" target="_blank" title="Instagram"><img src="img/instagram.svg" alt="Instagram"></a>
@@ -54,6 +56,7 @@
       <br>
       <p class="copy">Copyright &copy; 2020. All rights reserved.  <a class="credit" href="credit.html" title="Credit">Credit</a></p><br>
     </footer>
+    </div>
     <script src="scripts/missions.js" charset="utf-8"></script>
   </body>
 </html>

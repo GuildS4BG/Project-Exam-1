@@ -1,7 +1,12 @@
-body{
+* {
   box-sizing: border-box;
+}
+body{
   height: 100vh;
   margin: 0;
+  padding: 0;
+  min-width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -14,7 +19,7 @@ header{
   top: 0;
   z-index: 1000;
 }
-p, h2, h3, li, a{
+p, h2, h3, li, a, form{
   color: #fff;
   font-family: 'Roboto', sans-serif;
 }
@@ -96,6 +101,9 @@ a{
 }
 .bg-about{
   background-image: url("../img/bg-about-415.jpg");
+}
+.bg-contact{
+  background-image: url("../img/bg-contact-415.jpg");
 }
 .h1{
   margin-top: 100px;
@@ -213,6 +221,9 @@ footer {
   .bg-about{
     background-image: url("../img/bg-about-600.jpg");
   }
+  .bg-contact{
+    background-image: url("../img/bg-contact-600.jpg");
+  }
 }
 @media only screen and (min-width: 600px){
   .header-logo img{
@@ -229,6 +240,9 @@ footer {
   }
   .bg-about{
     background-image: url("../img/bg-about-960.jpg");
+  }
+  .bg-contact{
+    background-image: url("../img/bg-contact-960.jpg");
   }
 }
 @media only screen and (min-width: 960px){
@@ -257,6 +271,9 @@ footer {
   .bg-about{
     background-image: url("../img/bg-about-1440.jpg");
   }
+  .bg-contact{
+    background-image: url("../img/bg-contact-1440.jpg");
+  }
 }
 @media only screen and (min-width: 1440px){
   .bg-home{
@@ -270,5 +287,8 @@ footer {
   }
   .bg-about{
     background-image: url("../img/bg-about-2400.jpg");
+  }
+  .bg-contact{
+    background-image: url("../img/bg-contact-2400.jpg");
   }
 }

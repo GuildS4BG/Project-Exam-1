@@ -1,10 +1,11 @@
 const url = "https://api.spacexdata.com/v4/launches/next";
-const resultsContainer = document.querySelector(".countdown");
 async function getNextLaunch() {
   const response = await fetch(url);
   const results = await response.json();
 
   console.log(results);
+
+  document.getElementById("live-button").href= results.links.webcast;
 
   var launchTime = (results.date_unix * 1000);
 
