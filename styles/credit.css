@@ -1,0 +1,16 @@
+body{
+  background-color: #0F3654;
+}
+h1, p, a{
+  color: #fff;
+}
+h1{
+  font-size: 24px;
+}
+.credit a{
+  text-decoration: underline;
+}
+.credit {
+  padding: 20px;
+  padding-top: 200px;
+}

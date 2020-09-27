@@ -5,7 +5,14 @@ async function getNextLaunch() {
 
   console.log(results);
 
-  document.getElementById("live-button").href= results.links.webcast;
+  var liveVideo = results.links.webcast;
+  if (liveVideo === null) {
+    liveVideo = "https://www.youtube.com/spacex";
+  }
+  else {
+    liveVideo = results.links.webcast;
+  }
+  document.getElementById("live-button").href = liveVideo;
 
   var launchTime = (results.date_unix * 1000);
 

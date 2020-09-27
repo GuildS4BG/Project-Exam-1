@@ -1,6 +1,7 @@
 .quote {
   margin: 10px;
   margin-top: 120px;
+  text-align: center;
 }
 .quote h1{
   font-family: 'Audiowide', sans-serif;
@@ -35,6 +36,7 @@
   padding-top: 20px;
   background: rgba(5, 18, 28, 0.8);
   border-radius: 5px;
+  margin: auto;
   margin-bottom: 100px;
 }
 

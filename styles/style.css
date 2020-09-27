@@ -88,6 +88,7 @@ a{
   background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .bg-home{
   background-image: url("../img/bg-home-415.jpg");
@@ -97,7 +98,6 @@ a{
 }
 .bg-stars{
   background-image: url("../img/bg-stars-415.jpg");
-  background-attachment: fixed;
 }
 .bg-about{
   background-image: url("../img/bg-about-415.jpg");
@@ -112,12 +112,14 @@ a{
 .button {
   display: block;
   text-decoration: none;
-  background-color: #CD7225;
+  /* background-color: #CD7225; */
+  background-color: #904200;
   color: #fff;
   text-align: center;
   margin-top: 10px;
   padding: 10px;
   width: 150px;
+  cursor: pointer;
 }
 .button:hover {
   background-color: #A15A1D;
@@ -128,8 +130,6 @@ a{
 .button2:hover{
   background-color: #05121C;
 }
-
-
 
 .flex-wrap {
   display: flex;
@@ -176,39 +176,6 @@ footer {
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
-}
-
-@media only screen and (min-width: 600px) {
-  .col-m-1 {width: 8.33%;}
-  .col-m-2 {width: 16.66%;}
-  .col-m-3 {width: 25%;}
-  .col-m-4 {width: 33.33%;}
-  .col-m-5 {width: 41.66%;}
-  .col-m-6 {width: 50%;}
-  .col-m-7 {width: 58.33%;}
-  .col-m-8 {width: 66.66%;}
-  .col-m-9 {width: 75%;}
-  .col-m-10 {width: 83.33%;}
-  .col-m-11 {width: 91.66%;}
-  .col-m-12 {width: 100%;}
-}
-
-@media only screen and (min-width: 960px) {
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-
-@media only screen and (min-width: 415px){
   .bg-home{
     background-image: url("../img/bg-home-600.jpg");
   }
@@ -225,7 +192,20 @@ footer {
     background-image: url("../img/bg-contact-600.jpg");
   }
 }
-@media only screen and (min-width: 600px){
+
+@media only screen and (min-width: 600px) {
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
   .header-logo img{
     width: 25%;
   }
@@ -245,36 +225,50 @@ footer {
     background-image: url("../img/bg-contact-960.jpg");
   }
 }
-@media only screen and (min-width: 960px){
- .navbar a:not(:last-child){
-    display: block;
-    float: left;
-  }
-  .navbar a.burger i{
-    display: none;
-  }
-  .navbar{
-    float: right;
-  }
-  .header-logo img{
-    width: 15%;
-  }
-  .bg-home{
-    background-image: url("../img/bg-home-1440.jpg");
-  }
-  .bg-ship{
-    background-image: url("../img/bg-ship-1440.jpg");
-  }
-  .bg-stars{
-    background-image: url("../img/bg-stars-1440.jpg");
-  }
-  .bg-about{
-    background-image: url("../img/bg-about-1440.jpg");
-  }
-  .bg-contact{
-    background-image: url("../img/bg-contact-1440.jpg");
-  }
+
+@media only screen and (min-width: 960px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .navbar a:not(:last-child){
+     display: block;
+     float: left;
+   }
+   .navbar a.burger i{
+     display: none;
+   }
+   .navbar{
+     float: right;
+   }
+   .header-logo img{
+     width: 15%;
+   }
+   .bg-home{
+     background-image: url("../img/bg-home-1440.jpg");
+   }
+   .bg-ship{
+     background-image: url("../img/bg-ship-1440.jpg");
+   }
+   .bg-stars{
+     background-image: url("../img/bg-stars-1440.jpg");
+   }
+   .bg-about{
+     background-image: url("../img/bg-about-1440.jpg");
+   }
+   .bg-contact{
+     background-image: url("../img/bg-contact-1440.jpg");
+   }
 }
+
 @media only screen and (min-width: 1440px){
   .bg-home{
     background-image: url("../img/bg-home-2400.jpg");
