@@ -8,7 +8,7 @@ async function getRockets() {
 
   for (var i = 0; i < results.length; i++) {
     resultsContainer.innerHTML += `<div class="rockets">
-    <a href="${results[i].wikipedia}">
+    <a href="${results[i].wikipedia}" target="_blank" title="${results[i].name}">
     <h2>${results[i].name}</h2>
     </a>
     <a href="${results[i].flickr_images[0]}">
