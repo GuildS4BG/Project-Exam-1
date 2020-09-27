@@ -4,7 +4,16 @@ const resultsContainer = document.querySelector(".flex-wrap");
 async function getMissions() {
   const response = await fetch(url);
   const results = await response.json();
-
+  var liveVideo = results[0].links.webcast;
+  var buttonText;
+  if (liveVideo === null) {
+    liveVideo = "https://www.youtube.com/spacex";
+    buttonText = "Watch here!"
+  }
+  else {
+    liveVideo = results[0].links.webcast;
+    buttonText = "Watch Live Now!"
+  }
   console.log(results);
 
   nextMissionContainer.innerHTML += `<div class="next-mission-info">
@@ -15,9 +24,9 @@ async function getMissions() {
   <p>${results[0].crew}</p>
 
   <div class="buttons">
-  <a href="${results[0].links.reddit.campaign}" target="_blank" class="button button2">Read More</a>
+  <a href="${results[0].links.reddit.campaign}" class="button button2" target="_blank" title="Read More">Read More</a>
 
-  <a href="${results[0].links.webcast}" target="_blank" class="button">Watch Live Now!</a>
+  <a href="${liveVideo}" class="button" target="_blank" title="Watch live">${buttonText}</a>
   </div>
   </div>`;
 

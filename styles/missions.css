@@ -1,15 +1,21 @@
-
+.sub-head {
+  font-weight: bold;
+  font-size: 24px;
+}
 .next-mission {
   display: block;
   margin: 10px auto;
   padding: 10px;
   background: rgba(5, 18, 28, 0.8);
   border-radius: 5px;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 100px;
 }
 .next-mission-info{
   padding: 10px;
+}
+.flex-wrap {
+  margin-bottom: 100px;
 }
 .future-missions {
   background: #0F3654;
