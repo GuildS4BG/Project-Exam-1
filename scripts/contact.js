@@ -21,7 +21,7 @@ function submit() {
   }
   else document.getElementById("lastNameError").style.display = "none";
 
-  //this was my first, but didnt get it to work on input submit, just a normal button
+  //this was my first attempt, but didnt get it to work on input submit, just a normal button
   if(regEmail.test(email) == false) document.getElementById("emailError").style.display = "block";
   else document.getElementById("emailError").style.display = "none";
 }

@@ -1,8 +1,11 @@
+main {
+  padding: 10px;
+}
 .about-container{
   margin: auto;
   margin-top: 50px;
   margin-bottom: 100px;
-  width: 50%;
+  width: 100%;
   background: rgba(5, 18, 28, 0.6);
   border-radius: 5px;
   padding: 40px;
@@ -11,4 +14,10 @@
   color: #fff;
   position: relative;
   text-align: center;
+}
+
+@media only screen and (min-width: 700px) {
+  .about-container {
+    width: 50%;
+  }
 }

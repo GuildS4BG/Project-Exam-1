@@ -152,8 +152,11 @@ footer {
   padding: 10px;
   max-width: 50px;
 }
-.copy{
+footer p{
   text-align: center;
+}
+footer p a{
+  text-decoration: underline;
 }
 .credit {
   color: #888;

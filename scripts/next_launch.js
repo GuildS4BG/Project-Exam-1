@@ -6,14 +6,17 @@ async function getNextLaunch() {
   console.log(results);
 
   var liveVideo = results.links.webcast;
+  var buttonText;
   if (liveVideo === null) {
     liveVideo = "https://www.youtube.com/spacex";
+    buttonText = "Watch here!"
   }
   else {
     liveVideo = results.links.webcast;
+    buttonText = "Watch Live Now!"
   }
   document.getElementById("live-button").href = liveVideo;
-
+  document.getElementById("live-button").innerHTML = buttonText;
   var launchTime = (results.date_unix * 1000);
 
   var currentTime = Date.now();
